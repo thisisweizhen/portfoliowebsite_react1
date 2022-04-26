@@ -1,15 +1,24 @@
 import logo from '../images/navbar/logo.png';
+import { Link } from 'react-router-dom';
+
 
 function Navbar() {
     return (
-        <div className='flex flex-row justify-between px-8 font-serif'>
-            <img className='w-48 h-48' src={logo} alt=""/>
+        <div className='h-[20vh] flex flex-row justify-between px-8 font-serif mb-8'>
+            <Link to='/'>
+                <img className='w-32 h-32' src={logo} alt="" />
+            </Link>
+
             <div className='md:hidden block'>
                 Hamburger icon
             </div>
-            <div className='md:flex hidden flex-row gap-x-10 items-center' >
-                <div>Projects</div>
-                <div>About Me</div>
+            <div className='md:flex hidden flex-row gap-x-10 items-center text-xl' >
+
+                <a href="#projects">Projects</a>
+
+                <Link to='/about'>About Me</Link>
+
+
             </div>
 
         </div>

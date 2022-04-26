@@ -352,6 +352,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
+        'Cedarville Cursive',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -366,9 +367,18 @@ module.exports = {
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
-
       ],
-      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+
+      serif: [
+        'Karla',
+        'ui-serif', 
+        'Georgia', 
+        'Cambria', 
+        '"Times New Roman"', 
+        'Times', 
+        'serif'],
+
+
       mono: [
         'ui-monospace',
         'SFMono-Regular',
@@ -955,5 +965,5 @@ module.exports = {
     'active',
     'disabled',
   ],
-  plugins: [],
+  plugins: [require ('@tailwindcss/aspect-ratio')],
 }
