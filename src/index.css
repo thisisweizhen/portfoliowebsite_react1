@@ -11,9 +11,13 @@
   }
 
   p{
-    @apply px-40;
     @apply text-lg;
-    @apply leading-8;
+    @apply leading-loose;
+  }
+  
+  li{
+    @apply text-lg;
+    @apply leading-loose;
   }
 }
 

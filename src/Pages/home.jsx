@@ -14,7 +14,7 @@ function Home() {
             <Navbar />
 
             <div className='flex justify-center items-center flex-col w-full'>
-                <div className='text-9xl text-center mb-20 font-sans'>
+                <div className='text-9xl text-center mb-20 font-sans '>
                     Hello,
                     <br />
                     I'm Wei Zhen
@@ -25,7 +25,7 @@ function Home() {
                 </div>
 
                 <div>
-                    <img className='w-12 h-12 mb-20' src={arrow} alt="" />
+                    <img className='w-12 h-12 mb-20 animate-bounce ' src={arrow} alt="" />
                 </div>
             </div>
 
@@ -37,7 +37,7 @@ function Home() {
                 <div className='flex flex-row justify-between w-full px-40'>
 
                     <Link to='/amazon' >
-                        <div className=' h-100 w-80 bg-amber-200 rounded-3xl text-center '>
+                        <div className=' h-100 w-80 bg-amber-200 rounded-3xl text-center hover:bg-amber-300 transition duration-500 '>
                             <p className='font-bold text-3xl text-center mt-5 mb-2 px-5' >Amazon.sg</p>
                             <p className='text-base text-center px-5 mb-4' >Redesigining of Amazon E-Commerce Mobile Application Platform</p>
                             <div className='flex flex-col justify-center items-center '>
@@ -53,11 +53,11 @@ function Home() {
 
 
 
-                    <div className='bg-red-300 h-100 w-80 rounded-3xl flex flex-col justify-center'>
+                    <div className='bg-red-300 h-100 w-80 rounded-3xl flex flex-col justify-center hover:bg-red-400 transition duration-500'>
                         <p className='font-bold text-3xl text-center px-5' >Work In Progress</p>
 
                     </div>
-                    <div className='bg-orange-300 h-100 w-80 rounded-3xl flex flex-col justify-center'>
+                    <div className='bg-orange-300 h-100 w-80 rounded-3xl flex flex-col justify-center hover:bg-orange-400 transition duration-500'>
                         <p className='font-bold text-3xl text-center px-5 ' >Work In Progress</p>
 
                     </div>
