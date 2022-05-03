@@ -22,7 +22,7 @@ function Amazon() {
         <div >
             <Navbar />
 
-            <div className='h-[80vh] flex flex-col items-center'>
+            <div className='h-[90vh] flex flex-col items-center justify-center pb-52'>
                 <div className="text-7xl font-bold text-center mt-20">
                     Amazon.sg
                 </div>
@@ -67,9 +67,9 @@ function Amazon() {
                     <h2 className='text-center pb-10' >Competitor's Analysis</h2>
                     <p className='text-center' >To compare Amazon with its stronger competitors, I did a competitor analysis in which these insights gained will provide key information in terms of the strengths we want to build upon and the weaknesses we want to avoid.</p>
                     <div className='flex flex-row gap-x-20' >
-                        <div className='mr-15 flex flex-col gap-4' >
-                            <div className='flex flex-col justify-center items-center mt-10 ' >
-                                <img className='w-2/5' src={shopee} alt="" />
+                        <div className='flex flex-col gap-4 flex-1' >
+                            <div className='flex flex-col justify-center items-center  h-32' >
+                                <img className='w-1/2' src={shopee} alt="" />
 
                             </div>
 
@@ -82,9 +82,9 @@ function Amazon() {
                             <li>Lack of variety of product origin</li>
                             <li>Quality of items is compromised</li>
                         </div>
-                        <div className='flex flex-col gap-4' >
-                            <div className='flex flex-col justify-center items-center mt-14' >
-                                <img className='w-1/2  ' src={lazada} alt="" />
+                        <div className='flex flex-col gap-4 flex-1' >
+                            <div className='flex flex-col justify-center items-center h-32' >
+                                <img className='w-1/2' src={lazada} alt="" />
                             </div>
 
                             <p className='font-bold' >Strengths</p>
@@ -120,6 +120,37 @@ function Amazon() {
                 <div className='w-8/12' >
                     <img src={hmw} alt="" />
                 </div>
+
+                <div className="grid grid-cols-3">
+                    <div className="border p-4">
+                        hello
+                    </div>
+                    <div className="border p-4">
+                        hello
+                    </div>
+                    <div className="border p-4">
+                        hello
+                    </div>
+                    <div className="border p-4">
+                        hello
+                    </div>
+                    <div className="border p-4">
+                        hello
+                    </div>
+                    <div className="border p-4">
+                        hello
+                    </div>
+                    <div className="border p-4">
+                        hello
+                    </div>
+                    <div className="border p-4">
+                        hello
+                    </div>
+                    <div className="border p-4">
+                        hello
+                    </div>
+                </div>
+
                 <h3>Information Architecture</h3>
                 <p className='text-center' >To empathize with the users, I created user flows to step into their thoughts and better understand their overall journey.</p>
                 <div className='w-full' >

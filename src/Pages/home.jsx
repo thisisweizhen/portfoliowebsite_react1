@@ -34,11 +34,11 @@ function Home() {
                     Projects
                 </div>
 
-                <div className='flex flex-row justify-between w-full px-40'>
+                <div className='flex lg:flex-row flex-col justify-center w-full gap-10 px-20'>
 
-                    <Link to='/amazon' >
-                        <div className=' h-100 w-80 bg-amber-200 rounded-3xl text-center hover:bg-amber-300 transition duration-500 '>
-                            <p className='font-bold text-3xl text-center mt-5 mb-2 px-5' >Amazon.sg</p>
+                    <Link to='/amazon' className="flex-1" >
+                        <div className='bg-amber-200 rounded-3xl text-center hover:bg-amber-300 transition duration-500 py-6'>
+                            <p className='font-bold text-3xl text-center px-5' >Amazon.sg</p>
                             <p className='text-base text-center px-5 mb-4' >Redesigining of Amazon E-Commerce Mobile Application Platform</p>
                             <div className='flex flex-col justify-center items-center '>
                                 <img className='w-32 mb-4' src={phone} alt="" />
@@ -53,11 +53,11 @@ function Home() {
 
 
 
-                    <div className='bg-red-300 h-100 w-80 rounded-3xl flex flex-col justify-center hover:bg-red-400 transition duration-500'>
+                    <div className='bg-red-300 rounded-3xl flex flex-col justify-center hover:bg-red-400 transition duration-500 flex-1'>
                         <p className='font-bold text-3xl text-center px-5' >Work In Progress</p>
 
                     </div>
-                    <div className='bg-orange-300 h-100 w-80 rounded-3xl flex flex-col justify-center hover:bg-orange-400 transition duration-500'>
+                    <div className='bg-orange-300 rounded-3xl flex flex-col justify-center hover:bg-orange-400 transition duration-500 flex-1'>
                         <p className='font-bold text-3xl text-center px-5 ' >Work In Progress</p>
 
                     </div>

@@ -6,6 +6,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Pages/home';
 import About from './Pages/about';
 import Amazon from './Pages/amazon';
+import ScrollToTop from "./components/scrollToTop";
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,6 +15,7 @@ root.render(
   <React.StrictMode>
 
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

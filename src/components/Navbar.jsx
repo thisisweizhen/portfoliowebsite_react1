@@ -1,20 +1,31 @@
 import logo from '../images/navbar/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+// import useLocation from 'react-router-dom'
 
 
 function Navbar() {
+    const location = useLocation()
+
     return (
-        <div className='h-[20vh] flex flex-row justify-between px-8 font-serif mb-8 sticky top-0 bg-white'>
+        <div className='h-[10vh] flex flex-row justify-between px-8 font-serif sticky top-0 bg-white items-center'>
             <Link to='/'>
                 <img className='w-32 h-32' src={logo} alt="" />
             </Link>
 
-            <div className='md:hidden block'>
+            <div className='md:hidden block cursor-pointer'>
                 Hamburger icon
             </div>
             <div className='md:flex hidden flex-row gap-x-10 items-center text-xl' >
-
-                <a href="#projects">Projects</a>
+                {
+                    location.pathname == "/"
+                        ?
+                        <a href="#projects">Projects</a>
+                        :
+                        <Link to="/#projects">
+                            Projects
+                        </Link>
+                }
+                {/* <a href="#projects">Projects</a> */}
 
                 <Link to='/about'>About Me</Link>
 
