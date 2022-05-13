@@ -7,9 +7,9 @@ function Navbar() {
     const location = useLocation()
 
     return (
-        <div className='h-[10vh] flex flex-row justify-between px-8 font-serif sticky top-0 bg-white items-center'>
+        <div className='h-[15vh] flex flex-row justify-between px-8 font-serif sticky top-0 items-center'>
             <Link to='/'>
-                <img className='w-32 h-32' src={logo} alt="" />
+                <img className='w-24 ' src={logo} alt="" />
             </Link>
 
             <div className='md:hidden block cursor-pointer'>

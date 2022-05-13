@@ -13,7 +13,7 @@ function Home() {
 
             <Navbar />
 
-            <div className='flex justify-center items-center flex-col w-full'>
+            <div className='flex justify-center items-center flex-col w-full h-[95vh]'>
                 <div className='text-9xl text-center mb-20 font-sans '>
                     Hello,
                     <br />
@@ -25,12 +25,13 @@ function Home() {
                 </div>
 
                 <div>
-                    <img className='w-12 h-12 mb-20 animate-bounce ' src={arrow} alt="" />
+                    <img className='w-12 h-12 animate-bounce ' src={arrow} alt="" />
                 </div>
             </div>
 
-            <div className='flex justify-center items-center flex-col w-full'>
-                <div className="text-5xl text-center mb-20" id='projects'>
+            <div id='projects' className='flex justify-center items-center flex-col w-full'>
+                
+                <div className="text-5xl text-center mb-20 ">
                     Projects
                 </div>
 
