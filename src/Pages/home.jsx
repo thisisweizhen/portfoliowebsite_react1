@@ -31,7 +31,7 @@ function Home() {
 
             <div id='projects' className='flex justify-center items-center flex-col w-full'>
                 
-                <div className="text-5xl text-center mb-20 ">
+                <div className="text-5xl text-center mb-20 pt-20">
                     Projects
                 </div>
 
