@@ -247,7 +247,7 @@ function Amazon() {
                 </div>
 
                 <h3>Information Architecture</h3>
-                <p className='text-center' >To empathize with the users, I created user flows to step into their thoughts and better understand their overall journey.</p>
+                <p className='text-justify' >To empathize with the users, I created user flows to step into their thoughts and better understand their overall journey.</p>
                 <div className='w-full' >
                     <img src={userflow} alt="" />
                 </div>
@@ -304,9 +304,11 @@ function Amazon() {
             </div>
 
             <div className='flex flex-col items-center mt-40 gap-4 lg:px-64 px-20 ' >
-                <h2 className='text-center ' >Reflection</h2>
-                <p className='text-center'>Overall, this project has made me understand how important the user experience is especially for an e-commerce platform when seamless journey means more leads and conversions, directly impacting the business. The design thinking process has aided me in understanding the gains and pains of our persona and thus creating designs to address them.
+                <h2 className='text-justify' >Reflection</h2>
+                <p className='text-justify'>Overall, this project has made me understand how important the user experience is especially for an e-commerce platform when seamless journey means more leads and conversions, directly impacting the business. The design thinking process has aided me in understanding the gains and pains of our persona and thus creating designs to address them.
                 </p>
+                <p>Do check out my 
+                    <a className='underline decoration-solid text-blue-700' href="https://pumpkincarrot.medium.com/why-amazon-isnt-blooming-in-singapore-55a7707a4fe9" target="_blank"> article</a> to further understand my thought process in these design. Looking forward to hearing some feedback. </p>
             </div>
 
             <Footer />
