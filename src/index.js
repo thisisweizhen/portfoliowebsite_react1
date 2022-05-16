@@ -9,7 +9,6 @@ import Amazon from './Pages/amazon';
 import ScrollToTop from "./components/scrollToTop";
 
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

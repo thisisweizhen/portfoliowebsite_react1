@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 
+
 function Home() {
     return (
         <div>
@@ -14,18 +15,18 @@ function Home() {
             <Navbar />
 
             <div className='flex justify-center items-center flex-col w-full h-[95vh]'>
-                <div className='text-9xl text-center mb-20 font-sans '>
+                <div className='text-9xl text-center mb-20 font-sans lg:mt-0 mt-52'>
                     Hello,
                     <br />
                     I'm Wei Zhen
                 </div>
-                <div className='text-2xl text-center w-1/2 mb-16 font-serif'>
+                <div className='text-2xl text-center lg:w-1/2 mb-16 font-serif'>
                     A product designer that uses my background in business and marketing to create meaningful user
                     experience with design.
                 </div>
 
                 <div>
-                    <img className='w-12 h-12 animate-bounce ' src={arrow} alt="" />
+                    <img className='w-12 h-12 animate-bounce lg:visible invisible ' src={arrow} alt="" />
                 </div>
             </div>
 
