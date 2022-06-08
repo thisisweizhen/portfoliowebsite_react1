@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './Pages/home';
 import About from './Pages/about';
 import Amazon from './Pages/amazon';
+import Fitree from './Pages/fitree';
 import ScrollToTop from "./components/scrollToTop";
 
 
@@ -19,6 +20,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/amazon" element={<Amazon />} />
+        <Route path="/fitree" element={<Fitree />} />
         
 
         

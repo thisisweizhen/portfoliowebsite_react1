@@ -4,6 +4,8 @@ import Footer from '../components/footer';
 import Navbar from '../components/Navbar';
 import phone from '../images/homepage/phone.png';
 import { Link } from 'react-router-dom';
+import Fitree from '../images/homepage/home.png';
+
 
 
 
@@ -31,7 +33,7 @@ function Home() {
             </div>
 
             <div id='projects' className='flex justify-center items-center flex-col w-full'>
-                
+
                 <div className="text-5xl text-center mb-20 pt-20">
                     Projects
                 </div>
@@ -47,26 +49,36 @@ function Home() {
                             </div>
 
                             <div className='font-bold '>View Project</div>
-                            
+
                         </div>
                     </Link>
 
+                    <Link to='/fitree' className="flex-1">
+                        <div className='bg-red-300 rounded-3xl flex flex-col justify-center hover:bg-red-400 transition duration-500 flex-1'>
+                            <p className='font-bold text-3xl text-center px-5 mt-4' >Fi.tree</p>
+                            <p className='text-base text-center px-5 mb-4'> A website designed to allow entrepreneurs to analyse their sales performance and manage their products across all decentralised platforms
+                            </p>
+                            <div className='flex flex-col justify-center items-center '>
+                                <img className='w-1/2 mb-4' src={Fitree} alt="" />
+                            </div>
+                            <div className='font-bold text-center mb-4'>View Project</div>
 
+                        </div>
 
+                    </Link>
 
-
-                    <div className='bg-red-300 rounded-3xl flex flex-col justify-center hover:bg-red-400 transition duration-500 flex-1'>
-                        <p className='font-bold text-3xl text-center px-5' >Work In Progress</p>
-
-                    </div>
                     <div className='bg-orange-300 rounded-3xl flex flex-col justify-center hover:bg-orange-400 transition duration-500 flex-1'>
                         <p className='font-bold text-3xl text-center px-5 ' >Work In Progress</p>
+
 
                     </div>
 
                 </div>
 
+
             </div>
+
+
 
             <Footer />
 
