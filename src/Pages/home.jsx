@@ -16,7 +16,7 @@ function Home() {
 
             <Navbar />
 
-            <div className='flex justify-center items-center flex-col w-full h-[95vh]'>
+            <div className='flex justify-center items-center flex-col h-[90vh]'>
                 <div className='text-9xl text-center mb-20 font-sans lg:mt-0 mt-52'>
                     Hello,
                     <br />
@@ -40,8 +40,8 @@ function Home() {
 
                 <div className='flex lg:flex-row flex-col justify-center w-full gap-10 px-20'>
 
-                    <Link to='/amazon' className="flex-1" >
-                        <div className='bg-amber-200 rounded-3xl text-center hover:bg-amber-300 transition duration-500 py-6'>
+                    <Link to='/amazon' className="flex-1 hover:text-black" >
+                        <div className='bg-amber-200 rounded-3xl text-center hover:bg-amber-300 transition duration-300 py-6'>
                             <p className='font-bold text-3xl text-center px-5' >Amazon.sg</p>
                             <p className='text-base text-center px-5 mb-4' >Redesigining of Amazon E-Commerce Mobile Application Platform</p>
                             <div className='flex flex-col justify-center items-center '>
@@ -53,8 +53,8 @@ function Home() {
                         </div>
                     </Link>
 
-                    <Link to='/fitree' className="flex-1">
-                        <div className='bg-red-300 rounded-3xl flex flex-col justify-center hover:bg-red-400 transition duration-500 flex-1'>
+                    <Link to='/fitree' className="flex-1 hover:text-black">
+                        <div className='bg-red-300 rounded-3xl flex flex-col justify-center hover:bg-red-400 transition duration-300 flex-1'>
                             <p className='font-bold text-3xl text-center px-5 mt-4' >Fi.tree</p>
                             <p className='text-base text-center px-5 mb-4'> A website designed to allow entrepreneurs to analyse their sales performance and manage their products across all decentralised platforms
                             </p>
@@ -67,7 +67,7 @@ function Home() {
 
                     </Link>
 
-                    <div className='bg-orange-300 rounded-3xl flex flex-col justify-center hover:bg-orange-400 transition duration-500 flex-1'>
+                    <div className='bg-orange-300 rounded-3xl flex flex-col justify-center hover:bg-orange-400 transition duration-300 flex-1'>
                         <p className='font-bold text-3xl text-center px-5 ' >Work In Progress</p>
 
 

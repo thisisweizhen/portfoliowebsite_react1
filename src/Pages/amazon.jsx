@@ -17,6 +17,9 @@ import click from '../images/amazon/click.png';
 import joe from '../images/amazon/joe.png';
 import victoria from '../images/amazon/victoria.png';
 import amy from '../images/amazon/amy.png';
+import MediumImage from '../components/images/MediumImage'
+import personas from '../assets/amazon/persona.json'
+import Persona from '../components/amazon/persona'
 
 
 function Amazon() {
@@ -33,17 +36,17 @@ function Amazon() {
                 <div className="text-7xl font-bold text-center mt-20">
                     Amazon.sg
                 </div>
-                <p className='mt-10 text-center lg:px-64 px-20 '>Amazon.com is an international e-commerce company and the leading e-retailer in the United States, with net sales amounting to close to 386 billion U.S. dollars in 2020. As a worldwide e-commerce company, Amazon operates in 13 countries and ships worldwide to more than 100 countries. Due to its global scope and reach, Amazon is considered one of the most valuable brands worldwide.</p>
+                <p className='mt-10 text-center lg:px-64 px-10 '>Amazon.com is an international e-commerce company and the leading e-retailer in the United States, with net sales amounting to close to 386 billion U.S. dollars in 2020. As a worldwide e-commerce company, Amazon operates in 13 countries and ships worldwide to more than 100 countries. Due to its global scope and reach, Amazon is considered one of the most valuable brands worldwide.</p>
 
             </div>
 
-            <div className=' lg:px-64 px-20 bg-amber-200 '>
+            <div className=' xl:px-64 px-10 bg-amber-200 '>
                 <div className='flex flex-col items-center gap-4'>
 
                     <h2 className='mt-20' >Project Overview</h2>
                     <h3>Problem Statement</h3>
                     <div className='flex flex-col justify-center items-align shrink-0 ' >
-                        <img src={ranking} alt="" />
+                        <MediumImage image={ranking} />
                     </div>
 
                     <p className='text-justify' >Though Amazon is the largest online retailer in the world, it ranks only 3rd in Singapore with Shopee leading at 13.6 million visits as of the 2nd quarter of 2021, followed by Lazada at 7.5 million while Amazon at 6.5 million (Statista, 2021). However, I believe Amazon has the potential to strive in Singapore as well by redesigning its mobile application</p>
@@ -54,12 +57,12 @@ function Amazon() {
                 </div>
             </div>
 
-            <div className='flex flex-col items-center mt-40 gap-4 lg:px-64 px-20 text-justify'>
+            <div className='flex flex-col items-center mt-40 gap-4 xl:px-64 px-10 text-justify'>
                 <h2 className='text-center ' >Design Process</h2>
-                <img className='w-5/6 shrink' src={process} alt="" />
+                <MediumImage image={process} />
                 <p className='mt-10'>Emphatise</p>
                 <h3>Market Research</h3>
-                <img className='mb-10' src={research} alt="" />
+                <MediumImage image={research} />
                 <li  >With therising consumer spending, government support and growing preference for online shopping, Singapore e-commerce market is projected to grow at a compound annual growth rate of 16.2% through 2025 to be worth $14.2b, according to GlobalData.</li>
                 <li>73% of online consumers in Singapore have patronized overseas merchants. Presently, cross-border e-commerce takes 35% of the entire Singapore e-commerce market (Heysara PteLtd, 2021).
                 </li>
@@ -69,15 +72,16 @@ function Amazon() {
 
             <div className='mt-40'></div>
 
-            <div className='lg:px-64 px-20 gap-4 text-justify'>
+            <div className='xl:px-64 px-20 gap-4 text-justify'>
                 <div className='pt-20' >
                     <h2 className=' pb-10 text-center' >Competitor's Analysis</h2>
                     <p className='' >To compare Amazon with its stronger competitors, I did a competitor analysis in which these insights gained will provide key information in terms of the strengths we want to build upon and the weaknesses we want to avoid.</p>
                     <div className='flex lg:flex-row flex-col gap-x-20' >
                         <div className='flex flex-col gap-4 flex-1' >
-                            <div className='flex flex-col justify-center items-center  h-32' >
-                                <img className='lg:w-1/2 w-1/4' src={shopee} alt="" />
-
+                            <div className="flex flex-row justify-center pt-4">
+                                <div className='h-32 w-80' >
+                                    <img className='object-contain object-center' src={shopee} alt="" />
+                                </div>
                             </div>
 
                             <p className='font-bold' >Strengths</p>
@@ -90,8 +94,10 @@ function Amazon() {
                             <li>Quality of items is compromised</li>
                         </div>
                         <div className='flex flex-col gap-4 flex-1' >
-                            <div className='flex flex-col justify-center items-center h-32' >
-                                <img className='lg:w-1/2 w-1/4' src={lazada} alt="" />
+                            <div className="flex flex-row justify-center pt-4">
+                                <div className='h-32 w-80' >
+                                    <img className='object-contain object-center' src={lazada} alt="" />
+                                </div>
                             </div>
 
                             <p className='font-bold' >Strengths</p>
@@ -109,9 +115,31 @@ function Amazon() {
                 </div>
             </div>
 
-            <div className='flex flex-col items-center mt-40 gap-4 lg:px-64 px-20 text-justify'>
-                <h2 className='text-center ' >User's Persona</h2>
-                <p> Using insights gained from secondary research, I created personas to represent Amazon’s users demographics. </p>
+            <div className='flex flex-col items-center mt-40 gap-4 xl:px-64 px-20 text-justify'>
+                <h2 className='text-center ' >
+                    User's Persona
+                </h2>
+                <div className="mb-10">
+                    Using insights gained from secondary research, I created personas to represent Amazon’s users demographics.
+                </div>
+
+                <div className="flex lg:flex-row flex-col  gap-10 w-full">
+                    {
+                        personas.map((item, index) => {
+                            let li = [amy, joe, victoria]
+                            return (
+                                <Persona
+                                    image={li[index]}
+                                    name={item.name}
+                                    list={item.list}
+                                />
+                            )
+                        })
+                    }
+
+                </div>
+
+                {/* <p> Using insights gained from secondary research, I created personas to represent Amazon’s users demographics. </p>
 
                 <div className='w-9/12' >
                     <div className="grid grid-cols-3 flex gap-8 mt-10">
@@ -155,12 +183,12 @@ function Amazon() {
 
                     </div>
 
-                </div>
+                </div> */}
 
 
             </div>
 
-            <div className='flex flex-col items-center mt-40 gap-4 lg:px-64 px-20 text-justify' >
+            <div className='lg:flex hidden flex-col items-center mt-40 gap-4 lg:px-64 px-20 text-justify' >
                 <p className='mt-10 '>Define & Ideate</p>
                 <h3>Defining The Problem</h3>
                 <p>To help define these problems, I used my understanding of the different persona to create POV statements to frame the problem from the user’s perspective. I used these POV statements to identify How Might We questions which would fuel my process to brainstorm solutions.</p>
@@ -249,15 +277,15 @@ function Amazon() {
                 <h3>Information Architecture</h3>
                 <p className='text-justify' >To empathize with the users, I created user flows to step into their thoughts and better understand their overall journey.</p>
                 <div className='w-full' >
-                    <img src={userflow} alt="" />
+                    <MediumImage image={userflow} />
                 </div>
 
                 <h3 className='mt-20' >Lo Fi Wireframe Sketches</h3>
                 <div className='w-full' >
-                    <img src={lofi1} alt="" />
+                    <MediumImage image={lofi1} />
                 </div>
                 <div className='w-8/12' >
-                    <img src={lofi2} alt="" />
+                    <MediumImage image={lofi2} />
                 </div>
             </div>
 
@@ -307,7 +335,7 @@ function Amazon() {
                 <h2 className='text-justify' >Reflection</h2>
                 <p className='text-justify'>Overall, this project has made me understand how important the user experience is especially for an e-commerce platform when seamless journey means more leads and conversions, directly impacting the business. The design thinking process has aided me in understanding the gains and pains of our persona and thus creating designs to address them.
                 </p>
-                <p>Do check out my 
+                <p>Do check out my
                     <a className='underline decoration-solid text-blue-700' href="https://pumpkincarrot.medium.com/why-amazon-isnt-blooming-in-singapore-55a7707a4fe9" target="_blank"> article</a> to further understand my thought process in these design. Looking forward to hearing some feedback. </p>
             </div>
 

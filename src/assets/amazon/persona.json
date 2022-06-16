@@ -1,0 +1,28 @@
+[
+    {
+        "image": "../images/amazon/amy.png",
+        "name": "Amy (The Kiasu Aunty)",
+        "list": [
+            "Discounts on items is a must",
+            "Flash sales are her forte", 
+            "Buys anything as long as it's worth the money"
+        ]
+    },
+    {
+        "image": "../images/amazon/amy.png",
+        "name": "John (The Average Joe)",
+        "list": [
+            "Looking to purchase what he needs online for its convenience",
+            "No particular brand affinity and interested products are all from different categories"
+        ]
+    },
+    {
+        "image": "../images/amazon/amy.png",
+        "name": "Victoria (The Material Girl)",
+        "list": [
+            "Shops for branded goods",
+            "Brand authenticity is her priority"        
+        ]
+    }
+
+]

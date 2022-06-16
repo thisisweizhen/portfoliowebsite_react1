@@ -12,6 +12,8 @@ import dashboard from '../images/fitree/dashboard.png';
 import productoverview from '../images/fitree/productoverview.png';
 import add from '../images/fitree/add.png';
 import details from '../images/fitree/details.png';
+import Zoom from 'react-medium-image-zoom'
+import MediumImage from '../components/images/MediumImage'
 
 
 
@@ -29,41 +31,42 @@ function Fitree() {
                 <p className='mt-10 text-center text-2xl lg:px-64 px-20 '>A website designed to allow entrepreneurs to analyse their sales performance and manage their products across all decentralised platforms. </p>
             </div>
 
-            <div className=' lg:px-64 px-20 '>
+            <div className=' lg:px-64 px-10 '>
                 <div className='flex flex-col items-center gap-4'>
 
                     <h2 className='mt-40' >Product Features</h2>
                     <div className='flex flex-col justify-center items-align shrink-0 ' >
-                        <img src={product} alt="" />
+                        <MediumImage image={product} />
                     </div>
 
                 </div>
             </div>
 
-            <div className=' lg:px-64 px-20 '>
+            <div className=' lg:px-64 px-10 '>
                 <div className='flex flex-col items-center gap-4'>
 
                     <h2 className='mt-40' >User Persona</h2>
                     <div className='flex flex-col justify-center items-align shrink-0 w-10/12 ' >
-                        <img src={persona} alt="" />
+                        <MediumImage image={persona} />
                     </div>
 
                 </div>
             </div>
 
 
-            <div className=' lg:px-64 px-20 '>
+            <div className=' lg:px-64 px-10 '>
                 <div className='flex flex-col items-center gap-4'>
 
                     <h2 className='mt-40' >User Flow</h2>
                     <div className='flex flex-col justify-center items-align shrink-0 ' >
-                        <img src={userflow} alt="" />
+                        <MediumImage image={userflow} />
+
                     </div>
 
                 </div>
             </div>
 
-            <div className=' lg:px-64 px-20 '>
+            <div className=' lg:px-64 px-10 '>
                 <div className='flex flex-col items-center gap-4'>
 
                     <h2 className='mt-40' >High Fidelity Wireframes</h2>
@@ -72,24 +75,23 @@ function Fitree() {
 
                     <h3 className='mt-20'>Sign Up Process</h3>
                     <div className='flex flex-col justify-center items-align shrink-0 gap-5' >
-                        <img src={signin} alt="" />
-                        <img src={connect} alt="" />
-                        <img src={create} alt="" />
-                        <img src={seed} alt="" />
-                        <img src={test} alt="" />
+                        <MediumImage image={signin} />
+                        <MediumImage image={connect} />
+                        <MediumImage image={create} />
+                        <MediumImage image={seed} />
+                        <MediumImage image={test} />
 
                     </div>
 
                     <h3 className='mt-20'>Home Dashboard</h3>
                     <p>The home dashboard is where users can view the overall analytics for the month.</p>
-                    <img src={dashboard} alt="" />
+                    <MediumImage image={dashboard} />
 
                     <h3 className='mt-20'>Product Page</h3>
                     <p>The product page allows users to make amendments easily to their product listings regardless of the platform they use as long as they sync their product IDs</p>
-                    <img src={productoverview} alt="" />
-                    <img src={add} alt="" />
-                    <img src={details} alt="" />
-
+                    <MediumImage image={productoverview} />
+                    <MediumImage image={add} />
+                    <MediumImage image={details} />
                 </div>
 
                 
