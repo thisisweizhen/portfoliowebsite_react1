@@ -72,7 +72,7 @@ function Amazon() {
 
             <div className='mt-40'></div>
 
-            <div className='xl:px-64 px-20 gap-4 text-justify'>
+            <div className='xl:px-64 px-10 gap-4 text-justify'>
                 <div className='pt-20' >
                     <h2 className=' pb-10 text-center' >Competitor's Analysis</h2>
                     <p className='' >To compare Amazon with its stronger competitors, I did a competitor analysis in which these insights gained will provide key information in terms of the strengths we want to build upon and the weaknesses we want to avoid.</p>
