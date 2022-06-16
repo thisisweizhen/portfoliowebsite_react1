@@ -331,7 +331,7 @@ function Amazon() {
                 </div>
             </div>
 
-            <div className='flex flex-col items-center mt-40 gap-4 lg:px-64 px-20 ' >
+            <div className='flex flex-col items-center mt-40 gap-4 lg:px-64 px-10 ' >
                 <h2 className='text-justify' >Reflection</h2>
                 <p className='text-justify'>Overall, this project has made me understand how important the user experience is especially for an e-commerce platform when seamless journey means more leads and conversions, directly impacting the business. The design thinking process has aided me in understanding the gains and pains of our persona and thus creating designs to address them.
                 </p>
