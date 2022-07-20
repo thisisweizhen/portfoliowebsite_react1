@@ -3,24 +3,11 @@ import Navbar from '../components/Navbar';
 import ranking from '../images/amazon/ranking.png';
 import process from '../images/amazon/designprocess.png';
 import research from '../images/amazon/marketresearch.png';
-import lazada from '../images/amazon/lazada.png';
-import shopee from '../images/amazon/shopee.png';
 import userflow from '../images/amazon/userflow.png';
 import lofi1 from '../images/amazon/lofi1.PNG';
 import lofi2 from '../images/amazon/lofi2.PNG';
 import lofi3 from '../images/amazon/lofi3.PNG';
-import homepage from '../images/amazon/homepage.png';
-import product from '../images/amazon/product.png';
-import category from '../images/amazon/category.png';
-import payment from '../images/amazon/payment.png';
-import cart from '../images/amazon/cart.png';
-import click from '../images/amazon/click.png';
-import joe from '../images/amazon/joe.png';
-import victoria from '../images/amazon/victoria.png';
-import amy from '../images/amazon/amy.png';
 import MediumImage from '../components/images/MediumImage'
-import personas from '../assets/amazon/persona.json'
-import Persona from '../components/amazon/persona'
 import checkout from '../images/amazon/checkout.png';
 import voucher from '../images/amazon/voucher.jpg';
 import details from '../images/amazon/details.png';
@@ -28,6 +15,7 @@ import condensed from '../images/amazon/condensed.gif';
 import select from '../images/amazon/select.gif';
 import popup from '../images/amazon/popup.gif';
 import paymentsummary from '../images/amazon/paymentsummary.gif';
+import microsite from '../images/amazon/microsite.gif';
 
 
 
@@ -93,7 +81,7 @@ function Amazon() {
                     </p>
                     <div className='flex lg:flex-row flex-col mt-20 items-center justify-center '>
                         <div className='lg:w-1/3 w-3/4 '>
-                            <img src={condensed} alt="" />
+                            <img src={microsite} alt="" />
                         </div>
                         <div className='w-2/3 lg:pl-20 flex flex-col justify-center lg:pt-0 pt-10'>
                             <p className='text-xl font-bold text-left'>Unnecessarily long product page </p>
