@@ -21,7 +21,6 @@ import amy from '../images/amazon/amy.png';
 import MediumImage from '../components/images/MediumImage'
 import personas from '../assets/amazon/persona.json'
 import Persona from '../components/amazon/persona'
-import micrositegif from '../images/amazon/microsite.gif';
 import checkout from '../images/amazon/checkout.png';
 import voucher from '../images/amazon/voucher.jpg';
 import details from '../images/amazon/details.png';
